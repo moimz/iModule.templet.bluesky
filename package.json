@@ -1,0 +1,89 @@
+{
+	"id":"com.moimz.imodule.templet.bluesky",
+	"title":{
+		"ko":"블루스카이"
+	},
+	"version":"1.0.0",
+	"author":{
+		"name":"Arzz",
+		"email":"arzz@arzz.com"
+	},
+	"homepage":"https://www.imodule.kr",
+	"language":"ko",
+	"layouts":{
+		"index":{
+			"ko":"인덱스페이지 (상단에 사이트이미지 및 소개가 포함되어 있습니다.)"
+		},
+		"subpage":{
+			"ko":"서브페이지 (상단에 네비게이션바 및 우측에 페이지목록이 포함되어 있습니다.)"
+		}
+	},
+	"configs":{
+		"address":{
+			"title":{
+				"ko":"주소"
+			},
+			"help":{
+				"ko":"사이트 하단 카피라이트부분에 나타날 주소를 입력하여 주십시오."
+			},
+			"type":"string",
+			"default":""
+		},
+		"contact":{
+			"title":{
+				"ko":"연락처"
+			},
+			"help":{
+				"ko":"사이트 하단 카피라이트부분에 나타날 연락처를 입력하여 주십시오."
+			},
+			"type":"string",
+			"default":""
+		},
+		"copyright":{
+			"title":{
+				"ko":"카피라이트"
+			},
+			"help":{
+				"ko":"사이트 하단에 나타날 카피라이트정보를 입력하여 주십시오. ({YEAR}입력시 올해년도로 치환됩니다.)"
+			},
+			"type":"string",
+			"default":""
+		},
+		"analytics":{
+			"title":{
+				"ko":"구글통계"
+			},
+			"help":{
+				"ko":"구글통계 스크립트를 추가할 수 있습니다."
+			},
+			"type":"textarea",
+			"default":""
+		},
+		"facebook":{
+			"title":{
+				"ko":"페이스북"
+			},
+			"help":{
+				"ko":"페이스북 주소를 입력하여 주십시오.(옵션)"
+			},
+			"type":"string",
+			"default":""
+		},
+		"twitter":{
+			"title":{
+				"ko":"트위터"
+			},
+			"help":{
+				"ko":"트위터 주소를 입력하여 주십시오.(옵션)"
+			},
+			"type":"string",
+			"default":""
+		}
+	},
+	"styles":[
+		"/styles/style.css"
+	],
+	"scripts":[
+		"/scripts/script.js"
+	]
+}

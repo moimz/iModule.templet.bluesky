@@ -1,0 +1,12 @@
+/**
+ * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodule.kr)
+ *
+ * 템플릿 컨테이너 스타일시트
+ *
+ * @file /templets/bluesky/styles/container.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 1.0.0
+ * @modified 2018. 1. 29.
+ */
+html, body {font-family:Roboto, NanumSquare, "Apple SD Neo Gothic", "malgun gothic", dotum, sans-serif !important; color:#222;}

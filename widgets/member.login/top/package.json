@@ -1,0 +1,21 @@
+{
+	"title":{
+		"ko":"상단메뉴 템플릿"
+	},
+	"version":"3.0.0",
+	"author":{
+		"name":"Arzz",
+		"email":"arzz@arzz.com"
+	},
+	"homepage":"https://www.imodule.kr",
+	"language":"ko",
+	"styles":[
+		"/styles/style.css"
+	],
+	"scripts":[
+		"/scripts/script.js"
+	],
+	"styles":[
+		"/styles/style.css"
+	]
+}

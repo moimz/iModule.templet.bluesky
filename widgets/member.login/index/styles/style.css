@@ -1,0 +1,33 @@
+/**
+ * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodule.kr)
+ *
+ * 템플릿 인덱스 외부로그인 위젯
+ *
+ * @file /templets/bluesky/widgets/member.login/index/login.php
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2018. 1. 30.
+ */
+div[data-widget=member-login][data-templet=index] section {height:227px; box-sizing:border-box;}
+div[data-widget=member-login][data-templet=index] section.login {position:relative;}
+div[data-widget=member-login][data-templet=index] section.login > h4 {font-size:20px; color:#fff; font-weight:normal; height:24px; margin-bottom:20px;}
+div[data-widget=member-login][data-templet=index] section.login > div.form {font-size:0; padding:0px; box-sizing:border-box;}
+div[data-widget=member-login][data-templet=index] section.login > div.form > div[data-role=input] > input {font-size:13px; border:0;}
+
+div[data-widget=member-login][data-templet=index] section.login > div.form > button {display:block; width:100%; height:40px; line-height:38px; margin-top:5px; vertical-align:top; border:0; background:#5d8bca; color:#fff; font-size:14px; cursor:pointer; border:1px solid rgba(255,255,255,0.05);}
+div[data-widget=member-login][data-templet=index] section.login > div.form > button:hover {background:#6693d0;}
+
+div[data-widget=member-login][data-templet=index] section.login > div.errorBox {display:none; position:absolute; top:175px; left:0; width:100%; background:#c20000; line-height:25px; padding:5px 10px; line-height:1.6; font-size:12px; color:#ffff7f; margin-top:0px !important; box-sizing:border-box; z-index:10;}
+div[data-widget=member-login][data-templet=index] section.login > div.errorBox:after {bottom:100%; left:50%; border:solid 0px transparent; content:" "; height:0; width:0; position:absolute; border-bottom-color: #c20000; border-width:5px; margin-top:-5px; margin-left:-5px;}
+
+div[data-widget=member-login][data-templet=index] section.logged {padding-top:15px;}
+div[data-widget=member-login][data-templet=index] section.logged > i.photo {display:block; width:80px; height:80px; border-radius:50%; margin:15px auto; background-size:cover; margin-top:0px;}
+div[data-widget=member-login][data-templet=index] section.logged > b {display:block; font-size:20px; height:30px; line-height:30px; text-align:center; color:#fff; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; margin-bottom:10px;}
+div[data-widget=member-login][data-templet=index] section.logged > b > a {text-decoration:none; color:#fff;}
+div[data-widget=member-login][data-templet=index] section.logged > small {display:block; font-size:14px; height:20px; line-height:20px; color:rgba(255,255,255,0.7); text-align:center;}
+
+div[data-widget=member-login][data-templet=index] section > div.link {height:30px; line-height:30px; margin-top:5px; text-align:center; font-size:0;}
+div[data-widget=member-login][data-templet=index] section > div.link > i {display:inline-block; vertical-align:middle; margin:3px; width:1px; height:14px; background:rgba(255,255,255,0.3);}
+div[data-widget=member-login][data-templet=index] section > div.link > button, div[data-widget=member-login][data-templet=index] section > div.link > a {height:20px; line-height:20px; cursor:pointer; background:transparent; color:#ccc; border:0; margin:0px 8px; font-size:13px; vertical-align:middle; display:inline-block; text-decoration:none;}
+div[data-widget=member-login][data-templet=index] section > div.link > button:hover, div[data-widget=member-login][data-templet=index] section > div.link > a:hover {color:#fff;}

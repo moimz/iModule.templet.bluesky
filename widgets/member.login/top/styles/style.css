@@ -1,0 +1,49 @@
+div[data-widget=member-login][data-templet=top] {float:right;}
+div[data-widget=member-login][data-templet=top] ul {display:inline-block; list-style:none; margin:0px; padding:0px; width:auto; margin-top:26px;}
+div[data-widget=member-login][data-templet=top] ul li {display:inline-block; padding:0px 8px; line-height:24px; color:rgba(255,255,255,0.35); font-size:13px; cursor:pointer;}
+div[data-widget=member-login][data-templet=top] ul li.bd {margin-left:5px; line-height:22px; color:rgba(255,255,255,0.6); border:1px solid rgba(255,255,255,0.2); -webkit-border-radius:4px; -khtml-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+
+div[data-widget=member-login][data-templet=top] ul li.user {position:relative;padding:0px 0px 0px 8px; line-height:24px; cursor:pointer; vertical-align:middle; margin-top:-6px;}
+div[data-widget=member-login][data-templet=top] ul li.user > img.thum {width:35px; height:35px; display:inline-block; margin-top:0px; -webkit-border-radius:50px; -khtml-border-radius:50px; -moz-border-radius:50px; border-radius:50px; border:1px solid rgba(255,255,255,0.4); vertical-align:middle; margin:0px; padding:0px;margin-right:10px;}
+div[data-widget=member-login][data-templet=top] ul li.user > a {color:#fff; display:inline-block; line-height:36px; vertical-align:middle; margin-right:12px;}
+div[data-widget=member-login][data-templet=top] ul li.user > a > i {margin-left:8px; font-weight:600;}
+div[data-widget=member-login][data-templet=top] ul li.user > a:hover {text-decoration:underline; ;}
+
+
+div[data-widget=member-login][data-templet=top] ul li.user .mypop {display:none;position:absolute; z-index:10; background:#fafafa;width:278px; top:50px;right:0px;border:1px solid #e0e0e0;text-align:center;cursor:default;}
+div[data-widget=member-login][data-templet=top] ul li.user .mypop:after, div[data-widget=member-login][data-templet=top] ul li.user .mypop:before { bottom: 100%; right: 80px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+div[data-widget=member-login][data-templet=top] ul li.user .mypop:after { border-color: rgba(255, 255, 255, 0); border-bottom-color: #fafafa; border-width: 7px; margin-left: -7px; }
+div[data-widget=member-login][data-templet=top] ul li.user .mypop:before { border-color: rgba(255, 255, 255, 0); border-bottom-color: #e0e0e0; border-width: 8px; margin-left: -8px; }
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > img.thum {width:68px; height:68px; display:inline-block; border-radius:50px; border:1px solid rgba(255,255,255,0.4); vertical-align:middle; margin:0px; padding:0px; margin-top:38px;}
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > a.close { position:absolute;top:0px;right:0px;font-size:20px;line-height:50px;width:50px;color:#c9c9c9;cursor:pointer; }
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > h4 { font-size: 18px; color:#111;line-height:30px;font-weight:400;margin-top:10px;}
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > p { font-size: 14px; color:#999;line-height:24px;font-weight:400;margin-top:0px;}
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > ul { display:block;height:62px; border-top:1px solid #e0e0e0; margin-top:30px;}
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > ul li { float:left;display:inline-block;height:62px;width:40%;padding:0px;}
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > ul li:nth-child(2) { width:20%; }
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > ul li > a { color:#666;display:block;line-height:62px; }
+div[data-widget=member-login][data-templet=top] ul li.user .mypop > ul li > a > b { color:#ff3f0b;font-weight:400;display:inline-block;margin-left:5px; }
+
+div[data-widget=member-login][data-templet=top] div.login_mask {display:none; position:fixed; z-index:300; top:0px; bottom:0px; left:0px; right:0px; background:#000; opacity:0.6;}
+div[data-widget=member-login][data-templet=top] div.pop_login {display:none; position:absolute; z-index:300; width:500px; height:auto; background-color:#fff; top:50%; margin-top:-215px; left:50%; margin-left:-250px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > h3 {position:relative; height:60px; display:block; background:#1c4b8c; font-size:20px; font-weight:600; line-height:60px; color:#fff; padding:0px 25px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > h3 a {position:absolute; top:0px; right:0px; display:block; width:60px; height:60px; background:url(../images/btn_close.png) center center no-repeat; cursor:pointer;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box {position:relative; padding:40px 45px 30px 45px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > p {padding:1px 0px; line-height:44px; height:44px; margin-right:110px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > p > b {float:left; display:inline-block; font-size:16px; font-weight:400; line-height:44px; width:75px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > p > span {display:block; margin-left:75px; padding:2px 0px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > p > span input {display:block; width:calc(100% - 22px); height:38px; line-height:38px; padding:0px 10px; border:1px solid #dbdbdb; font-size:16px; background:#fff !important;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > button {position:absolute; top:43px; right:50px; line-height:86px; height:86px; width:97px; background:#b18d4f; color:#fff; font-size:18px; font-weight:600; padding:0px; margin:0px; text-align:center; cursor:pointer; -webkit-border-radius:5px; -khtml-border-radius:5px; -moz-border-radius:5px; border-radius:5px; border:0;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > p.add_form {margin-left:75px; margin-top:15px; line-height:24px; height:auto; padding:0px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > p.add_form a {text-decoration:none; font-size:14px; color:#999; margin-right:20px;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.body > div.box > p.add_form a >i {margin-left:5px;}
+
+div[data-widget=member-login][data-templet=top] div.pop_login > div.bottom { background:url(../images/big_bn_bg.png) #dfeef7 center center no-repeat; background-size:600px; padding:35px 0px; text-align:center;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.bottom > p {font-size:18px; line-height:24px; color:#333;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.bottom > p > b {color:#0058a0; font-weight:400;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.bottom > a {text-decoration:none; display:inline-block; cursor:pointer; line-height:40px; padding:0px 18px; margin-top:20px; margin-bottom:0px; margin-right:18px; font-size:14px; font-weight:600; -webkit-border-radius:4px; -khtml-border-radius:4px; -moz-border-radius:4px; border-radius:4px; background:#505f73; color:#fff;}
+div[data-widget=member-login][data-templet=top] div.pop_login > div.bottom > a > i {background:url(../images/btn_arr.png) center center no-repeat; width:16px; height:11px; display:inline-block; margin-left:20px; vertical-align:middle;}
+
+@media (max-width:991px) {
+	div[data-widget=member-login][data-templet=top] {display:none;}
+}

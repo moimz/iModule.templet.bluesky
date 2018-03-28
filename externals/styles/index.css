@@ -1,0 +1,52 @@
+/**
+ * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodule.kr)
+ *
+ * 템플릿 인덱스 외부파일을 위한 스타일시트
+ *
+ * @file /templets/bluesky/externals/styles/style.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2018. 3. 23.
+ */
+main.index > div.container {margin:30px auto;}
+main.index > div.container > div.box {display:table; width:100%; table-layout:fixed;}
+main.index > div.container > div.box > div {display:table-cell; vertical-align:top;}
+
+main.index > div.container > div.box > div.login {width:250px; padding:30px 25px; background:#5f718b;}
+main.index > div.container > div.box > div.login > div.description {border-top:1px dashed rgba(255,255,255,0.2); font-size:14px; line-height:24px; color:rgba(255,255,255,0.5); padding-top:20px; height:192px; overflow:hidden;}
+
+main.index > div.container > div.box > div.recently {width:50%;}
+main.index > div.container > div.box > div.recently > div.box {border:1px solid #dbdbdb; width:100%; height:500px; box-sizing:border-box; border-left:0px; padding:30px 25px;}
+main.index > div.container > div.box > div.recently > div.box > h4 {font-size:20px; line-height:24px; font-weight:normal; height:24px; padding-bottom:26px;}
+main.index > div.container > div.box > div.recently > div.box > h4 > a {width:24px; height:24px; float:right; color:#999; font-size:24px;}
+main.index > div.container > div.box > div.recently > div.box > h4 > a > i {width:24px; height:24px; line-height:24px; text-align:center;}
+main.index > div.container > div.box > div.recently > div.box > ul[data-role=tab] {width:100%; height:32px; display:table; table-layout:fixed;}
+main.index > div.container > div.box > div.recently > div.box > ul[data-role=tab] > li {width:100%; display:table-cell;}
+main.index > div.container > div.box > div.recently > div.box > ul[data-role=tab] > li > button {width:100%; height:32px; line-height:32px; border:0; background:#f0f0f0; cursor:pointer; font-size:13px; color:#808080;}
+main.index > div.container > div.box > div.recently > div.box > ul[data-role=tab] > li.selected > button {background:#5d8bca; color:#fff;}
+main.index > div.container > div.box > div.recently > div.box > div[data-role=tab] {padding-top:20px;}
+main.index > div.container > div.box > div.recently > div.box > div[data-role=tab] > div[data-tab] {}
+
+
+@media (max-width:767px) {
+	main.index > div.container {margin:10px auto;}
+	
+	main.index > div.container > div.box {display:block;}
+	main.index > div.container > div.box > div {display:block; width:100%;}
+	main.index > div.container > div.box > div.login {width:100%; box-sizing:border-box;}
+	main.index > div.container > div.box > div.login > div.description {height:auto;}
+	
+	main.index > div.container > div.box > div.recently {width:100%;}
+	main.index > div.container > div.box > div.recently > div.box {border-left:1px solid #dbdbdb; padding:30px 20px; height:500px;}
+	main.index > div.container > div.box > div.recently:last-child > div.box {border-top:0px;}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	main.index > div.container > div.box > div.login {display:table-row; width:100%; background:#5f718b;}
+	main.index > div.container > div.box > div.login > div {display:table-cell; padding:30px 25px; width:50%;}
+	main.index > div.container > div.box > div.login > div.description {padding:30px 25px 30px 0px; vertical-align:bottom; height:auto; text-align:left;}
+	
+	main.index > div.container > div.box > div.recently > div.box {border-left:1px solid #dbdbdb;}
+	main.index > div.container > div.box > div.recently:last-child > div.box {border-left:0px;}
+}
