@@ -1,0 +1,31 @@
+/**
+ * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodule.kr)
+ *
+ * 회원로그인 위젯 모바일 슬라이드메뉴 템플릿 - 스타일시트
+ *
+ * @file /templets/bluesky/widgets/member.login/slide/styles/style.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2018. 3. 25.
+ */
+div[data-role=widget][data-widget=member-login][data-templet=slide] {padding:0px; width:calc(100% - 60px); height:30px; font-size:0; display:inline-block; vertical-align:middle;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section.login {padding:5px 0px;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > button, div[data-role=widget][data-widget=member-login][data-templet=slide] section > a {display:inline-block; line-height:28px; font-weight:normal; font-size:13px; height:30px; padding:0px 12px; vertical-align:middle; box-sizing:border-box; border:1px solid rgba(255,255,255,0.3); text-decoration:none; cursor:pointer; background:transparent; margin-right:5px; color:#fff;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > button[data-action=login] {background:#fff; color:#222;}
+
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] {border:0; width:calc(100% - 60px); height:40px; line-height:40px; display:inline-block; vertical-align:middle; font-size:14px; cursor:pointer; position:relative;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > i.photo {width:40px; height:40px; border:1px solid #ccc; background-repeat:no-repeat; background-size:cover; background-position:50% 50%; box-sizing:border-box; float:left; margin-right:10px; border-radius:50%; overflow:hidden;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > span {display:inline-block; max-width:calc(100% - 50px); height:40px; line-height:40px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > span > i.fa {float:right; margin-left:5px;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul {position:absolute; top:45px; left:0; z-index:10; width:150px; border:1px solid #c3cad0; background:#fff; box-shadow:1px 1px 3px rgba(0,0,0,0.2); list-style:none; display:none;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul:after, div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul:before {bottom:100%; left:20px; border:solid transparent; content:" "; height:0; width:0; position:absolute; border-color:rgba(255,255,255,0); border-bottom-color:#fff; border-width:5px; margin-left:-5px;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul:before {border-color:rgba(195,202,208,0); border-bottom-color:#c3cad0; border-width:6px; margin-left:-6px;}
+
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul > li {height:36px; padding:0; line-height:0; border-bottom:1px solid #e5e5e5;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul > li:hover {background:#f4f4f4;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul > li:last-child {border-bottom:0;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul > li > button {font-size:13px; padding:0px 10px; width:100%; height:36px; line-height:36px; background:transparent; border:0; text-align:left; cursor:pointer; color:#222;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu] > ul > li > button > i {width:20px; height:36px; float:left; line-height:36px;}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu].opened > span > i.fa:before {content:"\f0d8";}
+div[data-role=widget][data-widget=member-login][data-templet=slide] section > div[data-action=menu].opened > ul {display:block;}

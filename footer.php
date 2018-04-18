@@ -14,7 +14,7 @@ if (defined('__IM__') == false) exit;
 ?>
 <aside class="menu">
 	<div class="header">
-		<?php echo $IM->getWidget('member.login')->setTemplet('@moimz.slide')->doLayout(); ?>
+		<?php echo $IM->getWidget('member.login')->setTemplet('@slide')->doLayout(); ?>
 		<button type="button" data-action="close"><i class="mi mi-close"></i></button>
 	</div>
 
