@@ -13,7 +13,7 @@ main.index > div.container {margin:30px auto;}
 main.index > div.container > div.box {display:table; width:100%; table-layout:fixed;}
 main.index > div.container > div.box > div {display:table-cell; vertical-align:top;}
 
-main.index > div.container > div.box > div.login {width:250px; padding:30px 25px; background:#5f718b;}
+main.index > div.container > div.box > div.login {width:250px; padding:30px 25px; background:#345d96;}
 main.index > div.container > div.box > div.login > div.description {border-top:1px dashed rgba(255,255,255,0.2); font-size:14px; line-height:24px; color:rgba(255,255,255,0.5); padding-top:20px; height:192px; overflow:hidden;}
 
 main.index > div.container > div.box > div.recently {width:50%;}
@@ -45,7 +45,7 @@ main.index > div.container > div.box > div.recently > div.box > div[data-role=ta
 @media (min-width:768px) and (max-width:991px) {
 	main.index > div.container > div.box > div.login {display:table-row; width:100%; background:#5f718b;}
 	main.index > div.container > div.box > div.login > div {display:table-cell; padding:30px 25px; width:50%;}
-	main.index > div.container > div.box > div.login > div.description {padding:30px 25px 30px 0px; vertical-align:bottom; height:auto; text-align:left;}
+	main.index > div.container > div.box > div.login > div.description {padding:30px 25px 30px 0px; vertical-align:middle; height:auto; text-align:left;}
 	
 	main.index > div.container > div.box > div.recently > div.box {border-left:1px solid #dbdbdb;}
 	main.index > div.container > div.box > div.recently:last-child > div.box {border-left:0px;}

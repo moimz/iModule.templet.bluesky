@@ -67,10 +67,9 @@ $IM->addHeadResource('style',$Templet->getDir().'/externals/styles/index.css');
 				
 				<ul data-role="tab" data-name="ctl">
 					<li data-tab="all" class="selected"><button type="button">전체</button></li>
-					<li data-tab="teaching"><button type="button">교육</button></li>
-					<li data-tab="learning"><button type="button">학습</button></li>
-					<li data-tab="writing"><button type="button">글쓰기</button></li>
-					<li data-tab="elearning"><button type="button">이러닝</button></li>
+					<li data-tab="paper"><button type="button">논문</button></li>
+					<li data-tab="conference"><button type="button">컨퍼런스</button></li>
+					<li data-tab="patent"><button type="button">특허</button></li>
 				</ul>
 				<?php /*
 				<div data-role="tab" data-name="ctl">
