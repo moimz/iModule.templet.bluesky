@@ -13,7 +13,7 @@
 if (defined('__IM__') == false) exit;
 ?>
 <main class="subpage">
-	<div class="nbreadcrumb">
+	<div class="breadcrumb">
 		<div class="container">
 			<a href="<?php echo $IM->getUrl(false); ?>"><i class="mi mi-home"></i></a>
 			<i class="fa fa-angle-right" aria-hidden="true"></i>

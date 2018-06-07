@@ -45,17 +45,18 @@ if (defined('__IM__') == false) exit;
 			<li class="<?php echo $footer->menu; ?> <?php echo $footer->page; ?>"><a href="<?php echo $IM->getUrl($footer->menu,$footer->page,false); ?>"><?php echo $footer->title; ?></a></li>
 			<?php } ?>
 			<li class="sns">
-				<?php if (true || $Templet->getConfig('facebook')) { ?>
-				<a href="https://www.facebook.com/snuctl" target="_blank"><i class="fa fa-facebook"></i></a>
+				<?php if ($Templet->getConfig('facebook')) { ?>
+				<a href="<?php echo $Templet->getConfig('facebook'); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
 				<?php } ?>
 				
-				<?php if (true || $Templet->getConfig('twitter')) { ?>
-				<a href="https://www.youtube.com/user/snuetl" target="_blank"><i class="fa fa-twitter"></i></a>
+				<?php if ($Templet->getConfig('twitter')) { ?>
+				<a href="<?php echo $Templet->getConfig('twitter'); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
 				<?php } ?>
 			</li>
 		</ul>
 		
 		<div class="contact">
+			<i class="emblem" style="background-image:url(<?php echo $IM->getSiteEmblem(); ?>);"></i>
 			<div class="address">
 				<div><?php echo $Templet->getConfig('address'); ?></div>
 				<div><?php echo $Templet->getConfig('contact'); ?></div>

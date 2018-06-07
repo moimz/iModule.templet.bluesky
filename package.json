@@ -27,27 +27,47 @@
 				"ko":"사이트 하단 카피라이트부분에 나타날 주소를 입력하여 주십시오."
 			},
 			"type":"string",
-			"default":""
+			"default":"사이트주소"
 		},
 		"contact":{
 			"title":{
-				"ko":"연락처"
+				"ko":"문의"
 			},
 			"help":{
-				"ko":"사이트 하단 카피라이트부분에 나타날 연락처를 입력하여 주십시오."
+				"ko":"사이트 하단 카피라이트부분에 나타날 문의처를 입력하여 주십시오."
 			},
 			"type":"string",
-			"default":""
+			"default":"contact@example.com"
 		},
 		"copyright":{
 			"title":{
 				"ko":"카피라이트"
 			},
 			"help":{
-				"ko":"사이트 하단에 나타날 카피라이트정보를 입력하여 주십시오. ({YEAR}입력시 올해년도로 치환됩니다.)"
+				"ko":"사이트하단에 나올 카피라이트 문구를 입력하여 주십시오.({DOMAIN} : 사이트 도메인, {YEAR} : 현재년도로 치환됩니다.)"
 			},
 			"type":"string",
-			"default":""
+			"default":"ⓒ{YEAR} {DOMAIN}"
+		},
+		"facebook":{
+			"title":{
+				"ko":"페이스북"
+			},
+			"help":{
+				"ko":"페이스북 페이지 URL을 입력하면 사이트하단에 페이스북 페이지로 연결되는 아이콘이 나타납니다."
+			},
+			"type":"string",
+			"default":"https://www.facebook.com/moimzcom"
+		},
+		"twitter":{
+			"title":{
+				"ko":"트위터"
+			},
+			"help":{
+				"ko":"트위터 페이지 URL을 입력하면 사이트하단에 트위터 페이지로 연결되는 아이콘이 나타납니다."
+			},
+			"type":"string",
+			"default":"https://twitter.com/moimzcom"
 		},
 		"analytics":{
 			"title":{
@@ -57,26 +77,6 @@
 				"ko":"구글통계 스크립트를 추가할 수 있습니다."
 			},
 			"type":"textarea",
-			"default":""
-		},
-		"facebook":{
-			"title":{
-				"ko":"페이스북"
-			},
-			"help":{
-				"ko":"페이스북 주소를 입력하여 주십시오.(옵션)"
-			},
-			"type":"string",
-			"default":""
-		},
-		"twitter":{
-			"title":{
-				"ko":"트위터"
-			},
-			"help":{
-				"ko":"트위터 주소를 입력하여 주십시오.(옵션)"
-			},
-			"type":"string",
 			"default":""
 		}
 	},

@@ -2,51 +2,56 @@
 /**
  * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodule.kr)
  *
- * 템플릿 헤더
+ * 사이트헤더
  * 
  * @file /templets/bluesky/templets/header.php
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0
- * @modified 2018. 1. 29.
+ * @modified 2018. 5. 31.
  */
 if (defined('__IM__') == false) exit;
 
-$IM->loadWebFont('Roboto');
-//$IM->loadWebFont('OpenSans');
-$IM->loadWebFont('NanumSquare');
+/**
+ * 언어셋에 따라 웹폰트를 불러온다.
+ */
+if ($IM->getLanguage() == 'ko') {
+	$IM->loadWebFont('NanumSquare',true);
+	$IM->loadWebFont('OpenSans');
+} else {
+	$IM->loadWebFont('OpenSans',true);
+}
 $IM->loadWebFont('XEIcon');
 $IM->loadWebFont('FontAwesome');
 
+/**
+ * 컨테이너 또는 팝업으로 사이트내 페이지에 접근할 경우 컨터이너용 스타일시트를 불러온다.
+ */
 if (defined('__IM_CONTAINER__') == true) $IM->addHeadResource('style',$Templet->getDir().'/styles/container.css');
 ?>
-<header>
+<header data-site="<?php echo $IM->domain; ?>" class="<?php echo $IM->getPage()->layout; ?>">
+	<?php if (count($IM->getSiteLinks()) > 1) { ?>
+	<nav data-role="site">
+		<?php foreach ($IM->getSiteLinks() as $siteLink) { ?>
+		<a href="<?php echo $siteLink->url; ?>"<?php echo $siteLink->domain == $IM->domain ? ' class="selected"' : ''; ?>><?php echo $siteLink->title; ?></a>
+		<?php } ?>
+	</nav>
+	<?php } ?>
+	
 	<div class="top">
 		<div class="container">
 			<h1><a href="<?php echo $IM->getUrl(false); ?>" style="background-image:url(<?php echo $IM->getSiteLogo('default'); ?>);"><?php echo $IM->getSite()->title; ?></a></h1>
 			
 			<?php // $IM->getWidget('coursemos.userbar')->setTemplet('@default')->doLayout(); ?>
 			
-			<ul>
-				<?php $notice = $IM->getContextUrl('board','notice'); if ($notice !== null) { ?>
-				<li><a href="<?php echo $IM->getUrl($notice->menu,$notice->page,false); ?>">공지사항</a></li>
-				<li class="split"><i></i></li>
-				<?php } ?>
-				<?php if ($IM->getModule('member')->isLogged() == false) { ?>
-				<li><button type="button" onclick="">회원가입</button></li>
-				<?php } else { ?>
-				<li><button type="button" onclick="">정보수정</button></li>
-				<?php } ?>
-			</ul>
-			
 			<button type="button" data-action="slide"><i class="mi mi-bars"></i></button>
 		</div>
 	</div>
-
-	<nav>
+	
+	<nav data-role="navigation">
 		<div class="container">
 			<ul>
-				<?php foreach ($IM->getSitemap() as $menu) { if ($menu->menu == 'index' || $menu->is_hide == true) continue; ?>
+				<?php foreach ($IM->getSitemap() as $menu) { ?>
 				<li>
 					<a href="<?php echo $IM->getUrl($menu->menu,false); ?>"><?php echo $IM->parseIconString($menu->icon); ?><?php echo $menu->title; ?></a>
 					
@@ -60,7 +65,7 @@ if (defined('__IM_CONTAINER__') == true) $IM->addHeadResource('style',$Templet->
 							<div class="menus">
 								<ul>
 									<?php $loop = 0; foreach ($menu->pages as $page) { if ($page->is_hide == true) continue; if ($loop > 0 && $loop % 4 == 0) echo '</ul><ul>'; ?>
-									<li><a href="<?php echo $IM->getUrl($page->menu,$page->page,false); ?>"><?php echo $page->title; ?></a></li>
+									<li><a href="<?php echo $IM->getUrl($page->menu,$page->page,false); ?>"><?php echo $IM->parseIconString($page->icon); ?><?php echo $page->title; ?></a></li>
 									<?php $loop++; } ?>
 								</ul>
 							</div>
