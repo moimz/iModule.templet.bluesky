@@ -37,7 +37,7 @@ $IM->addHeadResource('style',$Templet->getDir().'/externals/styles/index.css');
 					$categories = $mBoard->db()->select($mBoard->getTable('category'))->where('bid','notice')->orderBy('sort','asc')->get();
 				}
 				?>
-				<h4>공지사항<a href="<?php echo $notice != null ? $IM->getUrl($notice->menu,$notice->page,false) : '#'; ?>"><i class="mi mi-plus-thin"></i></a></h4>
+				<h4>공지사항<a href="<?php echo $notice != null ? $notice : '#'; ?>"><i class="mi mi-plus-thin"></i></a></h4>
 				
 				<ul data-role="tab" data-name="notice">
 					<li data-tab="notice-all" class="selected"><button type="button">전체</button></li>
@@ -63,7 +63,7 @@ $IM->addHeadResource('style',$Templet->getDir().'/externals/styles/index.css');
 		
 		<div class="recently">
 			<div class="box">
-				<h4>최근 논문<a href="<?php $notice = $IM->getContextUrl('board','notice'); echo $notice != null ? $IM->getUrl($notice->menu,$notice->page,false) : '#'; ?>"><i class="mi mi-plus-thin"></i></a></h4>
+				<h4>최근 논문<a href="<?php $notice = $IM->getContextUrl('board','notice'); echo $notice != null ? $notice : '#'; ?>"><i class="mi mi-plus-thin"></i></a></h4>
 				
 				<ul data-role="tab" data-name="ctl">
 					<li data-tab="all" class="selected"><button type="button">전체</button></li>
