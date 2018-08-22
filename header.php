@@ -40,7 +40,7 @@ if (defined('__IM_CONTAINER__') == true) $IM->addHeadResource('style',$Templet->
 	
 	<div class="top">
 		<div class="container">
-			<h1><a href="<?php echo $IM->getUrl(false); ?>" style="background-image:url(<?php echo $IM->getSiteLogo('default'); ?>);"><?php echo $IM->getSite()->title; ?></a></h1>
+			<h1><a href="<?php echo $IM->getIndexUrl(); ?>" style="background-image:url(<?php echo $IM->getSiteLogo('default'); ?>);"><?php echo $IM->getSite()->title; ?></a></h1>
 			
 			<?php // $IM->getWidget('coursemos.userbar')->setTemplet('@default')->doLayout(); ?>
 			
