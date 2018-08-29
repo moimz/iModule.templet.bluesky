@@ -71,29 +71,24 @@ $IM->addHeadResource('style',$Templet->getDir().'/externals/styles/index.css');
 					<li data-tab="conference"><button type="button">컨퍼런스</button></li>
 					<li data-tab="patent"><button type="button">특허</button></li>
 				</ul>
-				<?php /*
+				
 				<div data-role="tab" data-name="ctl">
 					<div data-tab="all">
-						<?php $IM->getWidget('ctl.recently')->setTemplet('@index')->setValue('count',7)->doLayout(); ?>
+						<?php $IM->getWidget('publication.recently')->setTemplet('@index')->setValue('count',5)->doLayout(); ?>
 					</div>
 					
-					<div data-tab="teaching">
-						<?php $IM->getWidget('ctl.recently')->setTemplet('@index')->setValue('type','teaching')->setValue('count',7)->doLayout(); ?>
+					<div data-tab="paper">
+						<?php $IM->getWidget('publication.recently')->setTemplet('@index')->setValue('count',5)->setValue('category',array(1,2,3))->doLayout(); ?>
 					</div>
 					
-					<div data-tab="learning">
-						<?php $IM->getWidget('ctl.recently')->setTemplet('@index')->setValue('type','learning')->setValue('count',7)->doLayout(); ?>
+					<div data-tab="conference">
+						<?php $IM->getWidget('publication.recently')->setTemplet('@index')->setValue('count',5)->setValue('category',array(6,11))->doLayout(); ?>
 					</div>
 					
-					<div data-tab="writing">
-						<?php $IM->getWidget('ctl.recently')->setTemplet('@index')->setValue('type','writing')->setValue('count',7)->doLayout(); ?>
-					</div>
-					
-					<div data-tab="elearning">
-						<?php $IM->getWidget('ctl.recently')->setTemplet('@index')->setValue('type','elearning')->setValue('count',7)->doLayout(); ?>
+					<div data-tab="patent">
+						<?php $IM->getWidget('publication.recently')->setTemplet('@index')->setValue('count',5)->setValue('category',array(5))->doLayout(); ?>
 					</div>
 				</div>
-				*/ ?>
 			</div>
 		</div>
 	</div>

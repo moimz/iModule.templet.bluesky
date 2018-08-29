@@ -48,7 +48,7 @@ header > nav[data-role=navigation] > div.container > ul > li:hover > a:before {b
  */
 header > nav[data-role=navigation] > div.container > ul > li > div.submenu {position:absolute; top:50px; left:0px; right:0px; width:100%; background:#fff; z-index:999; display:none; box-shadow:0px 10px 10px rgba(0,0,0,0.1);}
 header > nav[data-role=navigation] > div.container > ul > li > div.submenu > div.container {font-size:0;}
-header > nav[data-role=navigation] > div.container > ul > li > div.submenu > div.container > .title {display:inline-block; width:300px; height:260px; background:#fff url(../images/bi_g.png) no-repeat 60px 165px; vertical-align:top;}
+header > nav[data-role=navigation] > div.container > ul > li > div.submenu > div.container > .title {display:inline-block; width:300px; height:260px; vertical-align:top;}
 header > nav[data-role=navigation] > div.container > ul > li > div.submenu > div.container > .title > h2 {font-size:28px; height:32px; line-height:32px; color:#1c4b8c; padding:40px 0px 20px 0px; border-bottom:1px solid #1c4b8c; margin-bottom:20px; display:inline-block; letter-spacing:-1px;}
 header > nav[data-role=navigation] > div.container > ul > li > div.submenu > div.container > .title > h2 > i.icon {display:block; float:left; width:24px; height:24px; margin:4px 10px 4px 0px; background-repeat:no-repeat; background-size:contain; background-position:0 50%; overflow:hidden; font-size:20px; vertical-align:middle; line-height:24px;}
 header > nav[data-role=navigation] > div.container > ul > li > div.submenu > div.container > .title > p {font-size:14px; line-height:24px; color:#666; padding-top:0px; padding-right:10px; font-weight:400;}
