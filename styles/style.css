@@ -7,9 +7,8 @@
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0
- * @modified 2018. 2. 20.
+ * @modified 2018. 10. 3.
  */
-/* html, body {font-family:Roboto, NanumSquare, "Apple SD Neo Gothic", "malgun gothic", dotum, sans-serif !important; color:#222;} */
 header {background:#1c4b8c;}
 
 /**
@@ -230,9 +229,6 @@ footer > div.container > div.copyright > div.status {text-align:right;}
 	footer > div.container > ul.menus > li {font-size:13px;}
 	footer > div.container > ul.menus > li.sns > a {font-size:16px;}
 
-	footer > div.container > div.contact > div {width:100%; display:block;}
-	footer > div.container > div.contact > div.address {text-align:center; width:100%; margin-bottom:20px;}
-	footer > div.container > div.contact > div.telephone > ul {background:#fff; padding:10px 15px; width:100%; margin-left:0px;}
 }
 
 /**
