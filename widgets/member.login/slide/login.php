@@ -1,6 +1,6 @@
 <?php
 /**
- * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodule.kr)
+ * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodules.io)
  *
  * 회원로그인 위젯 모바일 슬라이드메뉴 템플릿 - 로그인 상태가 아닌 경우
  *

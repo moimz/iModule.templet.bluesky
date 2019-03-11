@@ -1,6 +1,6 @@
 <?php
 /**
- * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodule.kr)
+ * 이 파일은 iModule 사이트템플릿(bluesky)의 일부입니다. (https://www.imodules.io)
  *
  * 게시판 최근게시물 위젯 (인덱스) 템플릿
  *
