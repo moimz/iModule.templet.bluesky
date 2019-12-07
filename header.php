@@ -8,7 +8,7 @@
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0
- * @modified 2018. 5. 31.
+ * @modified 2019. 7. 2.
  */
 if (defined('__IM__') == false) exit;
 
@@ -42,7 +42,7 @@ if (defined('__IM_CONTAINER__') == true) $IM->addHeadResource('style',$Templet->
 		<div class="container">
 			<h1><a href="<?php echo $IM->getIndexUrl(); ?>" style="background-image:url(<?php echo $IM->getSiteLogo('default'); ?>);"><?php echo $IM->getSite()->title; ?></a></h1>
 			
-			<?php // $IM->getWidget('coursemos.userbar')->setTemplet('@default')->doLayout(); ?>
+			<?php if ($IM->getPage()->layout != 'index') $IM->getWidget('member.login')->setTemplet('bar')->setValue('thema','dark')->setValue('buttons',array('profile','nickname','push','message'))->doLayout(); ?>
 			
 			<button type="button" data-action="slide"><i class="mi mi-bars"></i></button>
 		</div>
