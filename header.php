@@ -90,9 +90,22 @@ if (defined('__IM_CONTAINER__') == true) $IM->addHeadResource('style',$Templet->
 						<h4><a href="<?php echo $IM->getUrl($menu->menu,false); ?>"><?php echo $menu->title; ?></a></h4>
 						
 						<ul>
-							<?php foreach ($menu->pages as $page) { if ($page->is_hide == true) continue; ?>
-							<li><a href="<?php echo $IM->getUrl($page->menu,$page->page,false); ?>"><i class="fa fa-angle-right" aria-hidden="true"></i><?php echo $page->title; ?></a></li>
-							<?php } ?>
+							<?php
+							$previousGroup = null;
+							foreach ($menu->pages as $page) {
+								if ($page->is_hide == true) continue;
+								if ($previousGroup != null && $page->group == null) {
+									$previousGroup = null;
+									echo '</ul></li>';
+								}
+								
+								if ($page->group != null && ($previousGroup == null || $previousGroup->code != $page->group->code)) {
+									$previousGroup = $page->group;
+									echo '<li class="group"><i class="fa fa-angle-down"></i>'.$page->group->title.'<ul>';
+								}
+							?>
+							<li><a href="<?php echo $IM->getUrl($page->menu,$page->page,false); ?>"><i class="fa fa-angle-right"></i><?php echo $page->title; ?></a></li>
+							<?php } if ($previousGroup != null) echo '</ul></li>'; ?>
 						</ul>
 					</li>
 					<?php $loop++; } if ($loop % 4 !== 0) { for ($i=$loop%4; $i<4;$i++) echo '<li></li>'; } ?>

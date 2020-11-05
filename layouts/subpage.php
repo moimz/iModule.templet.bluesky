@@ -42,11 +42,10 @@ if (defined('__IM__') == false) exit;
 						
 						if ($item->group != null && ($previousGroup == null || $previousGroup->code != $item->group->code)) {
 							$previousGroup = $item->group;
+							
+							echo '<li class="group'.(in_array($IM->page,array_column($item->group->pages,'page')) == true ? ' opened selected"' : '').'"><button type="button">'.$item->group->title.'<i class="fa fa-angle-down"></i></button><ul>';
+						}
 					?>
-					<li class="group<?php echo in_array($IM->page,array_column($item->group->pages,'page')) == true ? ' opened selected"' : ''; ?>">
-						<button type="button"><?php echo $item->group->title; ?><i class="fa fa-angle-down"></i></button>
-						<ul>
-					<?php } ?>
 					<li<?php echo $IM->page == $item->page ? ' class="selected"' : ''; ?>>
 						<a href="<?php echo $IM->getUrl($item->menu,$item->page,false); ?>">
 							<?php echo $item->title; ?>
