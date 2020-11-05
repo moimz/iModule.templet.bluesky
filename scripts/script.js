@@ -42,6 +42,14 @@ $(document).ready(function() {
 	});
 	
 	/**
+	 * 서브페이지 좌측 그룹메뉴 처리
+	 */
+	$("main.subpage > div.container > div.context > nav > ul > li.group > button").on("click",function() {
+		var $parent = $(this).parent();
+		$parent.toggleClass("opened");
+	});
+	
+	/**
 	 * 모바일용 슬라이드 메뉴 이벤트 처리
 	 */
 	$("header > div.top > div.container > button[data-action=slide]").on("click",function() {
