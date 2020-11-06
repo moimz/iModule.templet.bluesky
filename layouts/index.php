@@ -4,7 +4,7 @@
  *
  * 템플릿 인덱스 레이아웃
  * 
- * @file /templets/bluesky/templets/layouts/index.php
+ * @file /templets/bluesky/layouts/index.php
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0

@@ -4,7 +4,7 @@
  *
  * 템플릿 서브페이지 레이아웃
  * 
- * @file /templets/bluesky/templets/layouts/subpage.php
+ * @file /templets/bluesky/layouts/subpage.php
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0

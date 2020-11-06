@@ -3,7 +3,7 @@
  *
  * 템플릿 자바스크립트
  * 
- * @file /templets/bluesky/templets/scripts/script.js
+ * @file /templets/bluesky/scripts/script.js
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0

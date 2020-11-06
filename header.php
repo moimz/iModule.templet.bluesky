@@ -4,7 +4,7 @@
  *
  * 사이트헤더
  * 
- * @file /templets/bluesky/templets/header.php
+ * @file /templets/bluesky/header.php
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0

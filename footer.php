@@ -4,7 +4,7 @@
  *
  * 템플릿 푸터
  * 
- * @file /templets/bluesky/templets/footer.php
+ * @file /templets/bluesky/footer.php
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0
